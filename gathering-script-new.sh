@@ -58,7 +58,7 @@ else
   export A24H_MODE="false"
 fi
 
-RA_STREAM_DATA=`curl -sS https://${RA_ADDRESS}:8443/status-json.xsl`
+RA_STREAM_DATA=`curl -sS https://${RA_ADDRESS}/status-json.xsl`
 if [[ "${A24H_MODE}" == "true" ]]; then
   PROGRAM_API_DATA=`cat ${A24H_PROGRAM_FILE}`
 else

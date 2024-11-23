@@ -45,7 +45,7 @@ RA_TAG_OLD=$RA_TAG
 RA_SHOW_LIVE_OLD=$RA_SHOW_LIVE
 RA_SHOW_ID_AS_PLANNED_OLD=$RA_SHOW_ID_AS_PLANNED
 
-RA_STREAM_DATA=`curl -sS https://${RA_ADDRESS}:8443/status-json.xsl`
+RA_STREAM_DATA=`curl -sS https://${RA_ADDRESS}/status-json.xsl`
 EMITER_API_DATA=`curl ${EMITER_API_ADDRESS}`
 
 #RAOGG_LISTENERS to zmienna w której zapisujemy aktualną liczbę słuchaczy streamu "raogg" z icecasta, RAMP3_LISTENERS to zmienna w której zapisujemy aktualną liczbę słuchaczy streamu "ramp3" z icecasta, a RA_LISTENERS to suma tych dwóch zmiennych
